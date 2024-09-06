@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- Rating state start -->
+        <div id="rating">
+          <header>
+            <div class="icon">
+              <img src="images/icon-star.svg" alt="" />
+            </div>
+          </header>
+          <article>
+            <h1 class="card-title">How did we do?</h1>
+            <p class="card-p">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+
+            <form id="feedbackForm">
+              <section class="card-rate">
+                <input type="radio" id="rate5" name="rate" value="5" />
+                <label for="rate5" title="Rate 5">5</label>
+                <input type="radio" id="rate4" name="rate" value="4" />
+                <label for="rate4" title="Rate 4">4</label>
+                <input type="radio" id="rate3" name="rate" value="3" />
+                <label for="rate3" title="Rate 3">3</label>
+                <input type="radio" id="rate2" name="rate" value="2" />
+                <label for="rate2" title="Rate 2">2</label>
+                <input type="radio" id="rate1" name="rate" value="1" />
+                <label for="rate1" title="Rate 1">1</label>
+              </section>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </article>
+        </div>
+        <!-- Rating state end -->
+        <!-- Thank you state start  -->
+        <div id="response" class="sleep">
+          <header>
+            <div class="icon-response">
+              <img src="images/illustration-thank-you.svg" alt="" />
+            </div>
+          </header>
+          <article>
+            <div class="card-response">
+              <p>You selected <span id="rateSelected">4</span> out of 5</p>
+            </div>
+            <h1 class="card-title">Thank you!</h1>
+            <p class="card-p">
+              out of 5 Thank you! We appreciate you taking the time to give a
+              rating. If you ever need more support, don’t hesitate to get in
+              touch!
+            </p>
+          </article>
+        </div>
+        <!-- Thank you state end -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="http://www.hugoalex.com.br/">Hugo Del Miranda/a>.
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

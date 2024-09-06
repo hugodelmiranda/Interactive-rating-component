@@ -1,0 +1,143 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Overpass;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 375px;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 25px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.icon {
+  background-color: hsl(218, 17%, 22%);
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sleep {
+  display: none;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.card-p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.card-rate {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card-rate input {
+  display: none;
+}
+
+.card-rate label {
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  background-color: hsl(218, 17%, 22%);
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.card-rate label:hover,
+.card-rate label:hover ~ label {
+  /* reason why the stars are in reverse order in the html */
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(213, 19%, 18%);
+}
+
+.card-rate input:checked ~ label {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(213, 19%, 18%);
+}
+
+button {
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  height: 30px;
+  background-color: hsl(25, 97%, 53%);
+  border: 0;
+  border-radius: 20px;
+  color: hsl(213, 19%, 18%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+#response header {
+  text-align: center;
+}
+#response .card-response {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+#response .card-response p {
+  text-align: center;
+  background-color: hsl(218, 17%, 22%);
+  font-size: 15px;
+  color: hsl(25, 97%, 53%);
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline;
+}
+#response .card-title {
+  text-align: center;
+}
+#response .card-p {
+  text-align: center;
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */
